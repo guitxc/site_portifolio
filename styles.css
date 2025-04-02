@@ -9,9 +9,9 @@ html {
     scroll-behavior: smooth;
 }
 :root {
-    --primaria: #4f46e5;
-    --secundaria: #7c3aed;
-    --escuro: #0f172a;
+    --primaria: red;
+    --secundaria: black;
+    --escuro: #010612;
     --maisescuro: #0a0f1c;
     --claro: #e2e8f0;
     --vidro: rgba(255, 255, 255, 0.1);
@@ -59,20 +59,23 @@ body {
     width: 100%;
 }
 .cabecalho {
-    min-height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+        min-height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        text-align: center;
 }
 
 .foto_perfil {
-    width: 200px;
-    height: 250px;
-    box-shadow: 0 0 20px rgba(79, 70, 229, 0.3);
-    border-radius: 50%;
-    border: 4px solid var(--vidro);
-
+        display: block;
+        margin: 0 auto;
+        width: 200px;
+        height: 200px;
+        box-shadow: 0 0 20px rgba(79, 70, 229, 0.3);
+        border-radius: 50%;
+        border: 4px solid var(--vidro);
+        object-fit: cover; /* Garante que a imagem fique bem ajustada no círculo */
 }
 h1 {
     font-size: 3.5rem;

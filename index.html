@@ -38,8 +38,10 @@
         <h2 class="sobre-titulo">Sobre Mim</h2>
         <div class="sobre-caixa">
             <p class="sobre-paragrafo">
-                Sou estudante de programação na universidade São Judas Tadeu Butantã, estou estudando para ser
-                desenvolvedor Full-Stack
+                Estudante da área de tecnologia com foco em desenvolvimento
+                backend, tenho paixão por resolver problemas e otimizar
+                sistemas para máxima eficiência e escalabilidade.
+
             </p>
         </div>
     </section>
@@ -56,15 +58,17 @@
                 </div>
             </div>
             <div class="projetos-card">
-                <img src="img/ChatGPT Image 31 de mar. de 2025, 16_58_45.png" alt="Futuro projeto" class="projetos_imagem">
+                <img src="img/ChatGPT Image 31 de mar. de 2025, 16_58_45.png" alt="Futuro projeto"
+                    class="projetos_imagem">
                 <div class="caixa-textos-projeto">
                     <h3 class="info_projeto">Futuro projeto 2</h3>
                     <p class="paragrafo_projeto">Futuro projeto 2</p>
                 </div>
             </div>
             <div class="projetos-card">
-                <img src="img/ec2264210dfbfe184fd8d17c3c97a8e3ab42c6a3929b069cf064089ab788fb52.png" alt="Futuro projeto" class="projetos_imagem">
-                <div class="caixa-textos-projeto">    
+                <img src="img/ec2264210dfbfe184fd8d17c3c97a8e3ab42c6a3929b069cf064089ab788fb52.png" alt="Futuro projeto"
+                    class="projetos_imagem">
+                <div class="caixa-textos-projeto">
                     <h3 class="info_projeto">Futuro projeto 3</h3>
                     <p class="paragrafo_projeto">Futuro projeto 3</p>
                 </div>
@@ -74,18 +78,45 @@
 
     <section id="contatos" class="contatos">
         <h2 class="contatos_titulo">Entre em Contato</h2>
-        <form class="formulario_contato" id="formulario">
+        <form class="formulario_contato" id="formulario" onsubmit="enviarWhats(event)">
             <div class="grupo_form">
-                <input placeholder="Nome" class="campo_form">
+                <input placeholder="Nome" class="campo_form" id="nome">
             </div>
             <div class="grupo_form">
-                <textarea class="campo_form" placeholder="Digite sua mensagem"></textarea>
+                <textarea class="campo_form" placeholder="Digite sua mensagem" id="mensagem" rows="6"></textarea>
             </div>
 
             <button type="submit" class="botao_form">Enviar WhatsApp</button>
         </form>
 
     </section>
+
+    <script>
+        function enviarWhats(event){
+            event.preventDefault()
+            const nome = document.getElementById('nome').value;
+            const mensagem = document.getElementById('mensagem').value;
+            const telefone = '5511989389110';
+
+            const texto = `Olá! Me chamo ${nome}, ${mensagem}`;
+            const MsgFormatada = encodeURIComponent(texto);
+
+            const url = `https://wa.me/${telefone}?text=${MsgFormatada}`
+
+            window.open(url, '_blank')           
+        }
+
+        const nome = document.getElementById('nome');
+        const mensagem = document.getElementById('mensagem');
+        const telefone = '5511989389110';
+
+        const texto = `Olá! Me chamo ${nome}, ${mensagem}`;
+        const MsgFormatada = encodeURIComponent(texto);
+
+        const url = `https://whatsa.me/${telefone}/?t=${MsgFormatada}`
+
+        window.open(url, '_blank')
+    </script>
 </body>
 
 </html>
