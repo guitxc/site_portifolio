@@ -72,7 +72,7 @@ body {
         margin: 0 auto;
         width: 200px;
         height: 200px;
-        box-shadow: 0 0 20px rgba(79, 70, 229, 0.3);
+        box-shadow: 0 0 20px rgba(212, 11, 11, 0.3);
         border-radius: 50%;
         border: 4px solid var(--vidro);
         object-fit: cover; /* Garante que a imagem fique bem ajustada no círculo */
@@ -126,7 +126,7 @@ h1 {
 }
 
 .projetos-card:hover {
-    box-shadow: 0 10px 20px rgba(79, 70, 229, 0.2);
+    box-shadow: 0 10px 20px rgb(232, 6, 6);
     transform: translateY(-10px) scale(1.03);
 }
 
@@ -185,7 +185,7 @@ h1 {
 }
 .campo_form:focus {
     border-color: var(--secundaria);
-    box-shadow: 0 0 10px rgba(79, 70, 229, 0.3);
+    box-shadow: 0 0 10px rgba(227, 8, 8, 0.3);
 }
 
 .grupo_form {
@@ -204,5 +204,5 @@ h1 {
 }
 .botao_form:hover {
     transform: translateY(-4px);
-    box-shadow: 0 5px 15px rgba(79, 70, 229, 0.4);
+    box-shadow: 0 5px 15px rgb(255, 0, 0);
 }
