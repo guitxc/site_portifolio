@@ -206,3 +206,23 @@ h1 {
     transform: translateY(-4px);
     box-shadow: 0 5px 15px rgb(255, 0, 0);
 }
+.redes_contato {
+    margin-top: 2rem;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+.icone_link {
+    font-size: 2.5rem;
+    color: var(--claro);
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.icone_link:hover {
+    transform: scale(1.2);
+    color: var(--primaria);
+}
+   
