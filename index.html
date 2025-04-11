@@ -7,6 +7,16 @@
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <title>Guilherme Sandoli Portifolio</title>
+    <meta name="description" content="Portfólio de Guilherme Sandoli, desenvolvedor Back-End.">
+    <meta name="keywords" content="Guilherme Sandoli, Desenvolvedor Back-End, Portfólio, Projetos, Contato">
+    <meta name="author" content="Guilherme Sandoli">
+    <style>
+        @media (max-width: 768px) {
+            .projetos-caixa {
+                flex-direction: column;
+            }
+        }
+    </style>
 </head>
 
 <body>
@@ -87,10 +97,12 @@
                 <textarea class="campo_form" placeholder="Digite sua mensagem" id="mensagem" rows="6"></textarea>
             </div>
 
-            <button type="submit" class="botao_form">Enviar WhatsApp</button>
+            <button type="submit" class="botao_form">
+                <i class="fab fa-whatsapp"></i> Enviar WhatsApp
+            </button>
         </form>
         <div class="redes_contato">
-            <a href="mailto:guisandolidna@gmail.com" class="icone_link" title="Email">
+            <a href="mailto:guisandolidna@gmail.com" class="icone_link" title="Email" aria-label="Enviar email">
                 <i class="fas fa-envelope"></i>
             </a>
             <a href="https://www.linkedin.com/in/guisandoli/" target="blank" class="icone_link" title="LinkedIn">
@@ -104,33 +116,14 @@
         
 
     </section>
+    
+    <footer class="rodape">
+        <p>&copy; 2025 Guilherme Sandoli. Todos os direitos reservados.</p>
+    </footer>
+    
+    <script src="script.js"></script>
+    
 
-    <script>
-        function enviarWhats(event){
-            event.preventDefault()
-            const nome = document.getElementById('nome').value;
-            const mensagem = document.getElementById('mensagem').value;
-            const telefone = '5511989389110';
-
-            const texto = `Olá! Me chamo ${nome}, ${mensagem}`;
-            const MsgFormatada = encodeURIComponent(texto);
-
-            const url = `https://wa.me/${telefone}?text=${MsgFormatada}`
-
-            window.open(url, '_blank')           
-        }
-
-        const nome = document.getElementById('nome');
-        const mensagem = document.getElementById('mensagem');
-        const telefone = '5511989389110';
-
-        const texto = `Olá! Me chamo ${nome}, ${mensagem}`;
-        const MsgFormatada = encodeURIComponent(texto);
-
-        const url = `https://whatsa.me/${telefone}/?t=${MsgFormatada}`
-
-        window.open(url, '_blank')
-    </script>
 </body>
 
 </html>
