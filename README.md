@@ -38,7 +38,7 @@ Este é o repositório do site de portfólio de Guilherme Sandoli, desenvolvido 
 
 ![Demonstração do Portfólio](img/ChatGPT%20Image%204%20de%20abr.%20de%202025%2C%2017_26_23.png)
 
-## 🛠️ Como Executar Localmente
+## 🛠️ Como Acessar o site
 
 1. Clone este repositório:
    ```bash
